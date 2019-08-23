@@ -13,8 +13,7 @@ export default function App() {
   return (
     <main>
       <Header />
-      {/* <TabNav /> */}
-      <CharacterList />
+      <TabNav />
       <Route path="/character" component={CharacterList} />
       <Route path="/location" component={LocationsList} />
       <Route path="/episode" component={EpisodeList} />

@@ -6,6 +6,13 @@ import { NavLink } from "react-router-dom";
 // Take a look at React Semantic UI tabs 
 // https://react.semantic-ui.com/modules/tab/
 export default function TabNav() {
-
+    return (
+        <>
+            <NavLink to="/" exact>Home</NavLink>
+            <NavLink to="/character">Characters</NavLink>
+            <NavLink to="/location">Locations</NavLink>
+            <NavLink to="/episode">Episodes</NavLink>
+        </>
+    )
 };
 
