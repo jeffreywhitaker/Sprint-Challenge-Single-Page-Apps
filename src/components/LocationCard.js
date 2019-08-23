@@ -1,12 +1,19 @@
 import React from "react";
+import { Card, Icon } from 'semantic-ui-react'
 
 export default function LocationCard(props) {
   return (
-    <div className="character-card">
-      <p>{props.name}</p>
-      <p>{props.type}</p>
-      <p>{props.dimension}</p>
-      {/* <p>{props.residents}</p> */}
-    </div>
+    <Card>
+      <Card.Content>
+        <Card.Header>{props.name}</Card.Header>
+        <Card.Meta>{props.type} - {props.dimension}</Card.Meta>
+      </Card.Content>
+      <Card.Content extra>
+        <a>
+          <Icon name='user' />
+          {props.residents.length} residents
+        </a>
+      </Card.Content>
+    </Card>
   )
 }
